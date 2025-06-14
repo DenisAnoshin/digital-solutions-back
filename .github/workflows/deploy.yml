@@ -20,6 +20,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            cd /var/www/your-backend
+            cd /var/www/ds-back
             git pull
             docker-compose up --build -d
